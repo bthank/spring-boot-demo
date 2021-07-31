@@ -24,11 +24,11 @@ public class CourseController {
 	@GetMapping("/courses/{id}")
 	public Course getCourse(@PathVariable long id) {
 		if (id == 1) {
-			return new Course(1L,"Microservice Architectures","Mark Meadows");
+			return new Course(1L,"Microservice Architecture 1","Mark Meadows");
 		} else if (id == 2){
-			return new Course(2L,"Advanced Java","Peter Travers");
+			return new Course(2L,"Advanced Java 2","Peter Travers");
 		} else {
-			return new Course(3L,"AWS Fundamentals","Kal Summers");
+			return new Course(3L,"AWS Fundamentals 1","Kal Summers");
 		}
 	}
 	
